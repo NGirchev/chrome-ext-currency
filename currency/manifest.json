@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+
+    "name": "Курсы валют",
+    "version": "1.0",
+
+    "icons": {
+        "16": "16x16.png",
+        "32": "32x32.png",
+        "64": "64x64.png",
+        "128": "128x128.png"
+    },
+
+    "background": {
+        "scripts": ["background.js","jquery.js", "popup.js"]
+    },
+
+    "permissions": [
+        "https://query.yahooapis.com/*"
+    ],
+
+    "browser_action": {
+        "default_title": "Курсы валют",
+        "default_icon": "64x64.png",
+        "default_popup": "popup.html"
+    }
+ }
