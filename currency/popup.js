@@ -2,7 +2,7 @@ $(document).ready(function(){
     updateRates(function(json){
         $('#usd').html("usd:"+getUsd(json));
         $('#eur').html("eur:"+getEur(json));
-        chrome.browserAction.setBadgeText({text:getUsd(json)});
+        chrome.browserAction.setBadgeText({text:roundRate(getUsd(json))});
     });
  });
 

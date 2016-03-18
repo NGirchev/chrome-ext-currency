@@ -8,5 +8,5 @@ window.onload = function() {
 				console.log(roundRate(getUsd(json)));
 		        chrome.browserAction.setBadgeText({text:roundRate(getUsd(json))});
     		});
-		}, 10000);
+		}, 60000);
 }
